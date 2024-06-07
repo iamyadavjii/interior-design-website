@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="footer.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custome.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .category-info {
+            text-align: justify;
+            font-size: smaller;
+        }
+
+        .category-heading {
+            font-size: 25px;
+        }
+
+        .category-main {
+            padding-bottom: 1rem;
+            scale: 0.9;
+        }
+
+        .project-tile-info {
+            padding: 1rem;
+            text-align: justify;
+            font-size: 12px;
+            opacity: 0.7;
+            margin-top: -10px;
+
+        }
+
+        .project-tile-heading {
+            text-align: center;
+            padding: 15px 0 0 0;
+            opacity: 0.8;
+            color: rgb(105, 90, 0);
+            font-size: 20px;
+        }
+
+        .grid-item:hover .project-tile-info {
+            padding-top: 1rem;
+        }
+
+        .grid-item:hover .project-tile-heading {
+            margin-top: 1rem;
+        }
+
+        .geeks {
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .geeks img {
+            width: 100%;
+            transition: 0.3s all ease-in-out;
+        }
+
+        .geeks:hover img {
+            transform: scale(1.4);
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <a class="navbar-item" href="index.html" id="logo">ATITANY</a>
+        <div id="navbar-right">
+            <div id="pc-nav">
+                <a class="underline-hover navbar-item" href="index.html">Home</a>
+                <a class="underline-hover navbar-item active" href="project.html">
+                    Projects</a>
+                <a class="underline-hover navbar-item" href="aboutus.html">About</a>
+                <a class="underline-hover navbar-item" href="contactus.html">Contact</a>
+            </div>
+            <!-- mobile menu -->
+            <div id="mob-nav">
+                <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"><img src="img/menu-icon-19353.png" width="60%"></button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="project.html">Project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutus.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactus.html">Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+        </div>
+    </div>
+
+
+
+
+    <!-- 
+    <div class="cat-main" style="padding-top: 10rem; padding-bottom: 5rem;">
+        <div class="category-main">
+            <h1 class="category-heading">Residential</h1>
+            <p class="category-info">At our company, we strive to provide the best residential interior design by
+                utilizing a combination of
+                our clients' preferences, the latest design trends, and expert knowledge of space planning and
+                functionality. We take the time to understand our clients' needs and desires for their space, and use
+                that information to create a personalized design plan that not only looks beautiful, but also enhances
+                the functionality of the space. Additionally, we stay up-to-date on the latest design trends to ensure
+                that our designs are fresh and current. Our team of experienced designers work closely with our clients
+                throughout the entire design process, from initial concept to final installation, to ensure that the
+                finished space exceeds their expectations.</p>
+        </div>
+        <div class="category-main">
+            <h1 class="category-heading">Commercial</h1>
+            <p class="category-info">At our company, we are dedicated to providing the best commercial interior design
+                by utilizing a combination of our clients' brand identity, the latest design trends, and expert
+                knowledge of space planning and functionality. We take the time to understand the unique needs and
+                requirements of our clients' business and the clients they serve, and use that information to create a
+                personalized design plan that not only looks professional but also enhances the functionality of the
+                space. Additionally, we stay up-to-date on the latest design trends to ensure that our designs are fresh
+                and current. Our team of experienced designers work closely with our clients throughout the entire
+                design process, from initial concept to final installation, to ensure that the finished space exceeds
+                their expectations and help to achieve their business objectives.</p>
+        </div>
+        <div class="category-main">
+            <h1 class="category-heading">Office</h1>
+            <p class="category-info">At our company, we pride ourselves on providing the best office interior design by
+                utilizing a combination of ergonomic design principles, the latest design trends, and expert knowledge
+                of space planning and functionality. We understand that an office space can play a critical role in the
+                productivity and well-being of employees, and use that information to create a personalized design plan
+                that not only looks professional but also enhances the functionality and comfort of the space.
+                Additionally, we stay up-to-date on the latest design trends and ergonomic principles to ensure that our
+                designs are fresh, current, and promote well-being of the employees. Our team of experienced designers
+                work closely with our clients throughout the entire design process, from initial concept to final
+                installation, to ensure that the finished space exceeds their expectations and helps to create a
+                positive and productive work environment.</p>
+        </div>
+    </div> -->
+
+    <div class="cat-main" style="padding-left: 5px; padding-top: 10rem;">
+
+        <h1>Projects</h1>
+
+        <section style="margin-left: -10px;">
+            <button class="underline-hover cat-button cat-1">Residential</button>
+            <button class="underline-hover cat-button cat-2">Commercial</button>
+            <button class="underline-hover cat-button cat-3">Office</button>
+            <button class="underline-hover cat-button cat-all">All </button>
+
+        </section>
+
+        <section>
+
+            <div class="grid-container">
+                <div class="geeks grid-item cat-item group-1"><a href="/projects/project1.html"><img
+                            src="img/imgg/6.jpg" alt="" width="100%"></a>
+                    <h5 class="project-tile-heading">The Ray</h5>
+                    <p class="project-tile-info">The Ray Villa in Alibag emphasises on the profile of the built form in
+                        relation to the hilltop property overlooking the Mumbai bay.</p>
+                </div>
+                <div class="geeks grid-item cat-item group-2"><a href="/project2.html"> <img src="img/imgg/2.jpg" alt=""
+                            width="100%"></a>
+                    <h5 class="project-tile-heading">House on a Stream</h5>
+                    <p class="project-tile-info">With a stream running through the house, this retreat in Alibag
+                        delicately weaves into the landscape. </p>
+                </div>
+                <div class="geeks grid-item cat-item group-2"><a href="/project3.html"> <img src="img/imgg/3.jpg" alt=""
+                            width="100%"></a>
+                    <h5 class="project-tile-heading">Riparian House</h5>
+                    <p class="project-tile-info">The Riparian House is placed below the crest of a hillock at the
+                        foothills of the Ghats near Mumbai.</p>
+                </div>
+                <div class="geeks grid-item cat-item group-3"><a href="/project4.html"><img src="img/imgg/4.jpg" alt=""
+                            width="100%"></a>
+                    <h5 class="project-tile-heading">BillionBricks Homes</h5>
+                    <p class="project-tile-info">BillionBricks Homes is the world’s first carbon negative, self
+                        financing home for the homeless. </p>
+                </div>
+                <div class="geeks grid-item cat-item group-1"><img src="img/imgg/5.jpg" alt="" width="100%">
+                    <h5 class="project-tile-heading">Jura House</h5>
+                    <p class="project-tile-info">This private family house in Switzerland is set within the beautiful
+                        Jura mountain range,</p>
+                </div>
+                <div class="geeks grid-item cat-item group-2"><img src="img/imgg/6.jpg" alt="" width="100%">
+                    <h5 class="project-tile-heading">Cliffadel Housing</h5>
+                    <p class="project-tile-info">This housing scheme in Goa is set within the hills along the Mormugao
+                        Bay,</p>
+                </div>
+                <div class="geeks grid-item cat-item group-2"><img src="img/imgg/7.jpg" alt="" width="100%">
+                    <h5 class="project-tile-heading">Lurra House</h5>
+                    <p class="project-tile-info">The Lurra House in Hyderabad celebrates the natural features despite it
+                        central urban location in the city.</p>
+                </div>
+                <div class="geeks grid-item cat-item group-3"><img src="img/imgg/8.jpg" alt="" width="100%">
+                    <h5 class="project-tile-heading">House of Galleries</h5>
+                    <p class="project-tile-info">House of Galleries is designed around an unconventional courtyard space
+                        with a sculpted landscape, </p>
+                </div>
+                <div class="geeks grid-item cat-item group-2 group-3"><img src="img/imgg/9.jpg" alt="" width="100%">
+                    <h5 class="project-tile-heading">Urban Green Home</h5>
+                    <p class="project-tile-info">The double height courtyard greets you when you enter the Urban Green
+                        Home. </p>
+                </div>
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="js/custome.js"></script>
+
+</body>
+
+</html>

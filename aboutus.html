@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="footer.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custome.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        footer {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            padding: 30px 0;
+            border-top: 1px solid black;
+        }
+
+        footer h3 {
+            margin-bottom: 20px;
+        }
+
+        footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer .social-icons {
+            margin-top: 20px;
+        }
+
+        footer .social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        footer .social-icons li a {
+            color: rgb(0, 0, 0);
+        }
+
+        .col-md-4 {
+            border: 1px solid black;
+            padding: 10px 50px;
+        }
+
+        .row {
+            padding: 10px;
+        }
+
+        .outerdiv {
+            /* width: 100%;
+            min-height: 100vh;
+            background: #EDF2F8; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .innerdiv {
+            transform: scale(0.9);
+            margin: 1rem;
+            display: grid;
+            grid-gap: 1.5rem;
+            grid-template-rows: repeat(2, 22rem);
+            grid-template-columns: repeat(4, 17rem);
+        }
+
+        .eachdiv {
+            padding: 1rem 2rem;
+            border-radius: 0.8rem;
+            box-shadow: 2px 2px 10px #6d6d6b6b;
+            color: white;
+        }
+
+        .eachdiv:hover {
+            box-shadow: 10px 10px 30px #ffd9006b;
+            transform: translateY(-5px);
+            transition: .3s;
+        }
+
+        .div1 {
+            background: #ffffff;
+            grid-column: 1/3;
+            grid-row: 1/2;
+            background-repeat: no-repeat;
+            background-position-x: 25rem;
+        }
+
+        .div2 {
+            background: #ffffff;
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+
+        .div3 {
+            background: white;
+            grid-column: 4/5;
+            grid-row: 1/3;
+            color: black;
+        }
+
+        .div4 {
+            background: white;
+            grid-column: 1/2;
+            grid-row: 2/3;
+            color: black;
+        }
+
+        .div5 {
+            background: #ffffff;
+            grid-column: 2/4;
+            grid-row: 2/3;
+        }
+
+
+        .review h4 {
+            font-size: 1.4rem;
+            color: #000000;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 0.8rem;
+        }
+
+
+        .review p {
+            font-size: 0.95rem;
+            color: #000000;
+            font-weight: 500;
+            opacity: 50%;
+            line-height: 1.5;
+        }
+
+
+        @media only screen and (max-width: 1000px) {
+            .innerdiv {
+                transform: scale(0.7);
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            .innerdiv {
+                transform: scale(0.6);
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .div1 {
+                background-position-x: 10rem;
+            }
+
+            .innerdiv {
+                display: flex;
+                flex-direction: column;
+                transform: scale(1);
+                margin: 2rem;
+                margin-bottom: 5rem;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <a class="navbar-item" href="index.html" id="logo">ATITANY</a>
+        <div id="navbar-right">
+            <div id="pc-nav">
+                <a class="underline-hover navbar-item" href="index.html">Home</a>
+                <a class="underline-hover navbar-item" href="project.html">Projects</a>
+                <a class="underline-hover navbar-item active" href="#">About</a>
+                <a class="underline-hover navbar-item" href="contactus.html">Contact</a>
+            </div>
+            <!-- mobile menu -->
+            <div id="mob-nav">
+                <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"><img src="img/menu-icon-19353.png" width="60%"></button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="project.html">Project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="aboutus.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactus.html">Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="cat-main" style="padding-top: 10rem;">
+
+        <center>
+            <h1>About</h1>
+        </center>
+    </div>
+
+    <div class="outerdiv">
+        <div class="innerdiv">
+            <!-- div1 -->
+            <div class="div1 eachdiv">
+
+                <div class="review">
+                    <h4>I received a job offer mid-course, and the subjects I learned were current, if not more so, in
+                        the company I joined. I honestly feel I got every penny’s worth.</h4>
+                    <p>“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
+                        transition and have heard some people who had an amazing experience here. I signed up for the
+                        free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks
+                        was the best - and most grueling - time of my life. Since completing the course, I’ve
+                        successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+                </div>
+            </div>
+            <!-- div2 -->
+            <div class="div2 eachdiv">
+
+                <div class="review">
+                    <h4>The team was very supportive and kept me motivated</h4>
+                    <p>“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
+                        for a big company. This was one of the best investments I’ve made in myself. ”</p>
+                </div>
+            </div>
+            <!-- div3 -->
+            <div class="div3 eachdiv">
+
+                <div class="review">
+                    <h4>Such a life-changing experience. Highly recommended!</h4>
+                    <p>“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from
+                        professionals who can help me learn programming step by step. I was encouraged to enroll by a
+                        former student of theirs who can only say wonderful things about the program. The entire
+                        curriculum and staff did not disappoint. In fact, I’ve often referred to it
+                        during interviews as an example of experience. It certainly helped me land a job as a full-stack
+                        100% recommend! ”</p>
+                </div>
+            </div>
+            <!-- div4 -->
+            <div class="div4 eachdiv">
+
+                <div class="review">
+                    <h4>An overall wonderful and rewarding experience</h4>
+                    <p>“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living
+                        while doing something I love. ”</p>
+                </div>
+            </div>
+            <!-- div5 -->
+            <div class="div5 eachdiv">
+
+                <div class="review">
+                    <h4>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them
+                        and learning from their experiences was easy.</h4>
+                    <p>“ The staff seem genuinely concerned about my progress which I find really refreshing. The
+                        program gave me the confidence necessary to be able to go out in the world and present myself as
+                        a capable junior developer. The standard is above the rest. You will get the personal attention
+                        you need from an incredible community of smart and amazing people. ”</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>ATITANY</h3>
+                    <p>An ISO 9001:2015 certified company and one of India's leading
+                        manufaturing of Laboratory Funiture and Fume Hoods. ATITANY supplies install and services
+                        its product all over india.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Email: bdm@chameza.com</li>
+                        <li>Phone: +91 82682 22200</li>
+                        <li>Address: 104, Raj swastik chs ltd. Daulat Nagar Road No.3, Maharashtra 400066</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Follow Us</h3>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook">F</i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter">T</i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus">G</i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest">P</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="js/custome.js"></script>
+
+</body>
+
+</html>
